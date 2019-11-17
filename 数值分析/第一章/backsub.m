@@ -1,7 +1,6 @@
 function x = backsub(U,y)
 % BACKSUB 回代法解上三角形线性方程组
-% Input -U is an n x n upper-triangular nonsigular matrix
-
+% Input -U 上三角矩阵
     [~,n] = size(U);
     U = triu(U);
     for k = n:-1:2
